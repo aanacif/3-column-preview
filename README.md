@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/aanacif/3-column-preview)
-- Live Site URL: [Add live site URL here](https://aanacif.github.io/price-component/)
+- Live Site URL: [Add live site URL here](https://aanacif.github.io/3-column-preview/)
 
 ## My process
 
