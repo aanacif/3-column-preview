@@ -4,4 +4,7 @@
   margin: 8rem auto 4rem auto;
   padding: 2rem;
   max-width: rem(1440);
+  @include breakpoint-down(medium) {
+    margin: 3rem auto;
+  }
 }
