@@ -1,0 +1,119 @@
+@use '../util' as *;
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 310px);
+  grid-template-rows: 510px;
+  justify-content: center;
+
+  @include breakpoint-down(medium) {
+    grid-template-columns: 704px;
+    grid-template-rows: repeat(3, 470px);
+  }
+  @include breakpoint-down(small) {
+    grid-template-columns: 310px;
+    grid-template-rows: repeat(3, 470px);
+  }
+  h1 {
+    font-family: var(--font-secondary);
+    margin: 2rem 0;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--verylightgray);
+  }
+  p {
+    color: var(--transparentwhite);
+    font-size: 0.95rem;
+    line-height: 2;
+    margin: 0;
+  }
+
+  &-sedan {
+    background-color: var(--brightorange);
+    padding: 3rem;
+    border-radius: 10px 0 0 10px;
+    button {
+      background-color: var(--verylightgray);
+      border: none;
+      border-radius: 25px;
+      padding: 0.8rem 2rem;
+      margin-top: 5rem;
+      color: var(--brightorange);
+      font-weight: 600;
+      @include breakpoint-down(medium) {
+        margin-top: 8.5rem;
+      }
+      @include breakpoint-down(small) {
+        margin-top: 3rem;
+      }
+      &:hover {
+        background-color: transparent;
+        color: var(--verylightgray);
+        border: solid 2px var(--verylightgray);
+        cursor: pointer;
+      }
+    }
+    @include breakpoint-down(medium) {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  &-suv {
+    background-color: var(--darkcyan);
+    padding: 3rem;
+    button {
+      background-color: var(--verylightgray);
+      border: none;
+      border-radius: 25px;
+      padding: 0.8rem 2rem;
+      margin-top: 5rem;
+      color: var(--darkcyan);
+      font-weight: 600;
+      @include breakpoint-down(medium) {
+        margin-top: 8.5rem;
+      }
+      @include breakpoint-down(small) {
+        margin-top: 3rem;
+      }
+      &:hover {
+        background-color: transparent;
+        color: var(--verylightgray);
+        border: solid 2px var(--verylightgray);
+        cursor: pointer;
+      }
+    }
+  }
+  &-luxury {
+    background-color: var(--verydarkcyan);
+    padding: 3rem;
+    border-radius: 0 10px 10px 0;
+    button {
+      background-color: var(--verylightgray);
+      border: none;
+      border-radius: 25px;
+      padding: 0.8rem 2rem;
+      margin-top: 5rem;
+      color: var(--verydarkcyan);
+      font-weight: 600;
+      @include breakpoint-down(medium) {
+        margin-top: 8.5rem;
+      }
+      @include breakpoint-down(small) {
+        margin-top: 3rem;
+      }
+      &:hover {
+        background-color: transparent;
+        color: var(--verylightgray);
+        border: solid 2px var(--verylightgray);
+        cursor: pointer;
+      }
+    }
+    @include breakpoint-down(medium) {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
+
+// &:focus-within {
+//   outline: 3px dashed red;
+// }
