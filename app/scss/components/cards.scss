@@ -4,7 +4,6 @@
   grid-template-columns: repeat(3, 310px);
   grid-template-rows: 510px;
   justify-content: center;
-
   @include breakpoint-down(medium) {
     grid-template-columns: 704px;
     grid-template-rows: repeat(3, 470px);
@@ -28,7 +27,6 @@
     line-height: 2;
     margin: 0;
   }
-
   &-sedan {
     background-color: var(--brightorange);
     padding: 3rem;
@@ -52,6 +50,9 @@
         color: var(--verylightgray);
         border: solid 2px var(--verylightgray);
         cursor: pointer;
+      }
+      &:focus-within {
+        outline: 3px dashed red;
       }
     }
     @include breakpoint-down(medium) {
@@ -81,6 +82,9 @@
         border: solid 2px var(--verylightgray);
         cursor: pointer;
       }
+      &:focus-within {
+        outline: 3px dashed red;
+      }
     }
   }
   &-luxury {
@@ -107,13 +111,12 @@
         border: solid 2px var(--verylightgray);
         cursor: pointer;
       }
+      &:focus-within {
+        outline: 3px dashed red;
+      }
     }
     @include breakpoint-down(medium) {
       border-radius: 0 0 10px 10px;
     }
   }
 }
-
-// &:focus-within {
-//   outline: 3px dashed red;
-// }
